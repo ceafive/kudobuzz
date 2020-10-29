@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"cd server && npm start\"  \"cd client && npm run dev\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ceafive/kudobuzz/issues"
   },
-  "homepage": "https://github.com/ceafive/kudobuzz#readme"
+  "homepage": "https://github.com/ceafive/kudobuzz#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
 }
